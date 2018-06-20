@@ -1,0 +1,11 @@
+# Node Modules #
+app/node_modules
+
+# The Blockchain #
+blockchain
+
+# yarn lockfile #
+app/yarn.lock
+
+# Build files #
+app/dist/bundle.js
