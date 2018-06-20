@@ -1,0 +1,134 @@
+/* General */
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Main */
+
+.main {
+    box-sizing: border-box;
+    height: 100%;
+    width: 60%;
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__account-buttons {
+    width: 100%;
+}
+
+.account-buttons__login-button,
+.account-buttons__create-account-button {
+    width: 100%;
+    border: none;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.main__message-container {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1em;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main__message-input-container {
+    flex: none;
+    width: 100%;
+}
+
+
+/* Message Container */
+
+.message-container__message {
+    width: 100%;
+}
+
+/* Message */
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.message__content {
+    margin: 0.25em 0;
+}
+
+
+/* Metadata Container */
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: none;
+    width: 100%;
+    margin: 0.5em auto;
+}
+
+.meta__from,
+.meta__to {
+    white-space: pre;
+}
+
+
+/* Message Input Container */
+
+.message-input-container__message-input {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+}
+
+.message-input-container__send-button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    margin-top: 0.5em;
+    border: none;
+}
+
+.message-input-container__recipient-container {
+    width: 100%;
+}
+
+
+/* Recipient Container */
+
+.recipient-container {
+    box-sizing: border-box;
+    padding-left: 0.1em;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.recipient-container__to-select {
+    flex: 1 1 auto;
+}
+
+.recipient-container__to-label {
+    flex: none;
+    margin-right: 1em;
+}

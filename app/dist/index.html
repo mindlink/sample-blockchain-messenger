@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Ethereum Messager</title>
+  </head>
+  <body>
+    <script src="./bundle.js"></script>
+    <div class="main">
+        <div class="main__account-buttons account-buttons" id="accountButtons">
+            <button class="account-buttons__login-button" id="loginButton">Log In</button>
+            <button class="account-buttons__create-account-button" id="createAccountButton">Create Account</button>
+        </div>
+        <div class="main__message-container message-container hidden" id="messageContainer">
+        </div>
+        <div class="main__message-input-container message-input-container hidden" id="messageInputContainer">
+            <div class="message-input-container__recipient-container recipient-container">
+                <span class="recipient-container__to-label">Recipient: </span>
+                <select class="recipient-container__to-select" id="toSelect"></select>
+            </div>
+            <textarea class="message-input-container__message-input" id="messageInput" rows="10"></textarea>
+            <button class="message-input-container__send-button" id="sendButton">Send Message</button>
+        </div>
+    </div>
+  </body>
+</html>
